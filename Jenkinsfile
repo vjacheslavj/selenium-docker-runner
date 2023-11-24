@@ -6,13 +6,13 @@ pipeline{
 
         stage('Run Test'){
             steps{
-                sh "docker-sompose up"
+                sh "docker-compose up"
             }
         }
 
         stage('Bring Grid Down'){
             steps{
-                sh "docker-sompose down"
+                sh "docker-compose down"
             }            
         }            
 
